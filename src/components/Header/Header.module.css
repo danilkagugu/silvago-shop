@@ -1,0 +1,36 @@
+.header {
+  padding: 15px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.container {
+  max-width: 1340px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.headerList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftHeader {
+  display: flex;
+  gap: 35px;
+}
+.iconHeader {
+  width: 25px;
+  height: 25px;
+}
+
+.rigthHeader {
+  display: flex;
+  gap: 30px;
+}
+
+.headerBtn {
+  background-color: transparent;
+}
