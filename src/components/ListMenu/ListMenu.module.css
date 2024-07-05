@@ -36,19 +36,19 @@
 }
 
 .dropDownMenu {
-  position: fixed; /* Фіксуємо до екрану */
+  position: fixed;
   display: none;
   left: 0;
-  top: 15%;
-  width: 100vw; /* Ширина на весь екран */
+  top: 17%;
+  width: 100vw;
   background-color: #fff;
   border: 1px solid #ddd;
   list-style: none;
-  padding: 20px; /* Зменшуємо padding для кращого вирівнювання */
+  padding: 20px;
   margin: 0;
   z-index: 1000;
-  column-count: 4; /* Кількість колонок */
-  column-gap: 20px; /* Проміжок між колонками */
+  column-count: 4;
+  column-gap: 20px;
   box-shadow: 0px 465px 186px rgba(153, 153, 153, 0.01),
     0px 261px 157px rgba(153, 153, 153, 0.05),
     0px 116px 116px rgba(153, 153, 153, 0.09),
@@ -56,7 +56,7 @@
 }
 
 .itemList:hover .dropDownMenu {
-  display: block; /* Змінюємо на block для відображення */
+  display: block;
 }
 
 .dropdownItem {
