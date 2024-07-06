@@ -12,10 +12,19 @@ import { AiOutlineMenu } from "react-icons/ai";
 import Modal from "react-modal";
 import { IoMdClose } from "react-icons/io";
 import ListMenuMob from "../ListMenu/ListMenuMob/ListMenuMob";
+import Registration from "../Registration/Registration";
+import LoginForm from "../LoginForm/LoginForm";
 
 const Header = () => {
   const [input, setInput] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [openRegistration, setOpenRegistration] = useState(false);
+  const [openLogin, setOpenLogin] = useState(false);
+  const toggleForm = () => {
+    setOpenRegistration((prevState) => !prevState);
+    setOpenLogin((prevState) => !prevState);
+  };
+
   return (
     <>
       <div className={css.header}>
@@ -59,7 +68,12 @@ const Header = () => {
             </div>
             <Logo />
             <div className={css.rigthHeader}>
-              <button className={css.headerBtn}>
+              <button
+                className={css.headerBtn}
+                onClick={() => {
+                  setOpenLogin(true);
+                }}
+              >
                 <IoPersonOutline className={css.iconHeader} />
               </button>
               <button className={css.headerBtn}>
@@ -96,6 +110,18 @@ const Header = () => {
           <ListMenuMob />
         </div>
       </Modal>
+      {openLogin && (
+        <LoginForm
+          toogleForm={toggleForm}
+          closeLogin={() => setOpenLogin(false)}
+        />
+      )}
+      {openRegistration && (
+        <Registration
+          closeRegistration={() => setOpenRegistration(false)}
+          toogleForm={toggleForm}
+        />
+      )}
     </>
   );
 };

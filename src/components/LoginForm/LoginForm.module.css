@@ -1,0 +1,75 @@
+.loginContainer {
+  margin: 0 auto;
+  width: 300px;
+  position: relative;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 20px;
+  align-items: center;
+  height: 400px;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.titileLogin {
+  font-size: 20px;
+}
+
+.iconClose {
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  cursor: pointer;
+}
+
+.labelForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formInput {
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(194, 194, 194);
+  width: 100%;
+}
+
+.btnRegistration {
+  width: 100px;
+  background-color: rgb(201, 201, 201);
+  padding: 7px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.error {
+  color: red;
+}
+
+@media screen and (min-width: 1440px) {
+  .loginContainer {
+    margin: 0 auto;
+    width: 700px;
+    position: relative;
+  }
+
+  .iconClose {
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    cursor: pointer;
+  }
+
+  .formInput {
+    width: 400px;
+  }
+}
